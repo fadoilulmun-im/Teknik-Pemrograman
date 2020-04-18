@@ -7,8 +7,8 @@ def linierSearch(arr, n, x):
 
 
 arr = [1, 3, 10, 90, 8, 9]
-x = 7
-hasil = linierSearch(arr, len(arr), x)
+ygdicari = 90
+hasil = linierSearch(arr, len(arr), ygdicari)
 if hasil:
     print("Elemen di temukan di index ke", hasil)
 else:
