@@ -6,7 +6,7 @@ def linierSearch(arr, n, x):
     return False
 
 
-arr = [1, 3, 10, 90, 8, 9]
+arr = [1, 3, 6, 7, 10, 90]
 ygdicari = 90
 hasil = linierSearch(arr, len(arr), ygdicari)
 if hasil:
