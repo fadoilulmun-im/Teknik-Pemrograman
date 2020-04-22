@@ -1,4 +1,8 @@
-def binarySearch(arr, l, r, x):
+def binarySearch(arr, l, r, ygdicari):
+
+    print('arraynya\t\t:',arr)
+    print('Elemen yang dicari\t:',ygdicari)
+    print()
 
     while l <= r:
 
@@ -17,9 +21,9 @@ def binarySearch(arr, l, r, x):
 
 
 arr = [2, 3, 4, 10, 40]
-ygdicari = 40
+x = 40
 
-result = binarySearch(arr, 0, len(arr) - 1, ygdicari)
+result = binarySearch(arr, 0, len(arr) - 1, x)
 
 if result:
     print("Elemen yang dicari ada di index ke", result)
