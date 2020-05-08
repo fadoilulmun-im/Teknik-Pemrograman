@@ -5,12 +5,14 @@ print("-" * 28)
 print("Nama\t: Fadoilul Mun'im\nNIM\t: 04319017")
 print("-" * 28)
 
-def kondisi(a):
-    if a:
-        print("\nElemen di temukan di index ke", a)
+def kondisi(l,b):
+    if l == b:
+        print("\nElemen di temukan di index ke", l)
         print('Linear Search\t: ditemukan dalam %f detik' %waktuliniear)
         print('binary Search\t: ditemukan dalam %f detik' %waktubinary)
-
+    elif (l == True) and (b == False):
+        print('\nLinear Search\t: ditemukan di index ke %d, dalam waktu %f detik' %(l,waktuliniear))
+        print('\nDalam algoritma Binary Search array harus sudah di urutkan')
     else:
         print("\nElemen yang dicari tidak ada dalam array")
 
@@ -54,7 +56,4 @@ binary = binarySearch(array, 0, len(array)-1, ygdicari)
 end = time.time()
 waktubinary = end-start
 
-if linear == binary:
-    kondisi(linear)
-else:
-    print('Dalam algoritma Binary Search array harus sudah di urutkan')
+kondisi(linear,binary)
